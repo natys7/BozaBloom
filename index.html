@@ -15,6 +15,7 @@
                 <a href="#home"><i class="fa fa-home"></i>home</a>
                 <a href="#about"><i class="fa fa-folder"></i>about</a>
                 <a href="#product"><i class="fa fa-glass"></i>product</a>
+                <a href="#bag"><i class="fa fa-shopping-basket"></i>bag</a> 
                 <a href="#contact"><i class="fa fa-phone"></i>contact</a>
             </nav>
         </header>
@@ -23,7 +24,11 @@
                 Hello
             </div>
             <div>
-                <a href="#home">order now</a>
+                <a href="#product">order now</a>
+            </div>
+            <div class="audio">
+                <audio src="imut.m4a" controls autoplay, preload="auto">
+            </audio>
             </div>
         </section>
         <section class = "about" id="about">
@@ -36,7 +41,9 @@
                     Boza is a fermented beverage with a thick, malt-like drink made from fermented grains, typically corn, wheat, or millet, and is popular in Central Asia, the Balkans, Turkey, and other regions. It has a subtle tart, tangy taste and a very low alcohol content. 
                 </p>
             </div>
+            </div>
         </section>
+
         <section class = "product" id="product">
             <div class="pdct">
                 <div class="card">
@@ -49,7 +56,7 @@
                         Traditional boza with an original taste of fermented millet with a sweet and sour tangy.
                     </p>
                     <h3>Rp. 25K</h3>
-                    <a href="#">Order</a>
+                    <a href="#bag">Add to Bag</a>
                     </div>
                 </div>
 
@@ -65,9 +72,7 @@
                 <h3>
                     Rp. 28K
                 </h3>
-                <a href="#">
-                    order
-                </a>
+                <a href="#bag">Add to Bag</a>
                 </div>
                 </div>
 
@@ -83,7 +88,7 @@
                 <h3>
                     Rp. 30K
                 </h3>
-                <a href="#">Order</a>
+                <a href="#bag">Add to Bag</a>
                 </div>
                 </div>
 
@@ -99,7 +104,7 @@
                 <h3>
                     Rp. 28K
                 </h3>
-                <a href="#">Order</a>
+                <a href="#bag">Add to Bag</a>
                 </div>
                 </div>
 
@@ -115,7 +120,7 @@
                 <h3>
                     Rp. 30K
                 </h3>
-                <a href="#">Order</a>
+                <a href="#bag">Add to Bag</a>
                 </div>
                 </div>
 
@@ -131,12 +136,19 @@
                 <h3>
                     Rp. 28K
                 </h3>
-                <a href="#">Order</a>
+                <a href="#bag">Add to Bag</a>
                 </div>
                 </div>
 
             </div>
         </section>
+
+        <section class="bag" id="bag">
+            <div class="card">
+              <p class="empty-msg">Bag is empty. Please add product to your bag.</p>
+            </div>
+          </section>
+
         <section class = "contact" id="contact">
             <div class = "card">
                 <div>
@@ -148,8 +160,13 @@
                     <p>Phone: 0847632425</p>
                     <p>Email: bozabloom@gmail.com</p>
                 </div>
+                <div class="audio">
+                    <audio src="we.m4a" controls utoplay, preload="auto">
+                    </audio>
+                </div>
             </div>
         </section>
+
         <footer>
             <div class="medsos">
                 <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
@@ -158,6 +175,6 @@
              </div>
           </footer> 
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
-          <script src="script.js" ></script>
+          <script src="script.js"> </script>
     </body>
 </html>
