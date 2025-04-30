@@ -5,11 +5,9 @@ html {
     margin: 0px;
     font-family: "Courier New", Courier, monospace;
   }
-  
   a:hover {
     animation: pulse 1s ease-in-out infinite;
   }
-  
   header {
     box-sizing: border-box;
     position: fixed;
@@ -17,7 +15,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f6efe2;
+    background-color: #f8d89c9a;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,25 +26,24 @@ html {
   header div img {
     width: 10%;
     align-items: left;
+    border-radius: 20px 20px 20px 20px;
   }
   header .logo {
     font-weight: bold;
     font-size: 20px;
     color: darkslategray;
   }
-  
   nav {
     height: 50px;
-    display: flex; /* Flexbox handles horizontal layout */
+    display: flex; 
     align-items: center;
   }
-  
   nav a {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 20px; /* horizontal space only */
+    padding: 0 20px; 
     height: 100%;
     text-decoration: none;
     color: black;
@@ -54,19 +51,17 @@ html {
     text-shadow: 0 0 2px gray;
     transition: background-color 0.3s;
   }
-  
   nav a:hover {
-    background-color: rgba(237, 237, 100, 0.69);
+    background-color: rgba(249, 236, 59, 0.783);
     border-radius: 5px;
   }
-  
   section.home {
     background: url("home.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 720px;
-    padding-top: 70px;
+    padding-top: 250px;
   }
   section.home div {
     text-align: center;
@@ -78,7 +73,6 @@ html {
   }
   section.home .Hello {
     font-size: 30px;
-    text-align: center;
   }
   section.home a {
     color: wheat;
@@ -92,7 +86,7 @@ html {
     padding: 100px 30px 50px 30px;
     background-color: burlywood;
     height: 650px;
-    padding-top: 100px;
+    padding-top: 150px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -114,7 +108,6 @@ html {
     min-height: 750px;
     padding: 100px 30px 50px 30px;
   }
-  
   section.product .pdct {
     justify-content: center;
     display: flex;
@@ -161,25 +154,29 @@ html {
       transform: rotate(0deg);
     }
   }
-  
   @keyframes pulse {
     0%,
     100% {
-      box-shadow: 0 0 0 rgba(255, 215, 0, 0.5);
+      box-shadow: 0 0 0 rgba(255, 102, 0, 0.5);
     }
     50% {
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+      box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
     }
   }
-  
   .card:hover {
     box-shadow: #000000;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation: y 0.5s;
   }
+  section.bag{
+    background-color: blanchedalmond;
+    height: 630px;
+    padding: 100px;
+    text-align: center;
+  }
   section.contact {
     background-color: rgb(251, 237, 182);
-    height: 780px;
+    height: 680px;
   }
   section.contact .card {
     margin: auto;
@@ -193,8 +190,7 @@ html {
     align-items: center;
     border-radius: 10px 10px 10px 10px;
   }
-  
-  @keyframes shake {
+  @keyframes w {
     0% {
       transform: rotate(0deg);
     }
@@ -211,8 +207,25 @@ html {
       transform: rotate(0deg);
     }
   }
-  .card:hover {
+  .card:hover{
     box-shadow: #f6efe2;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation: shake 0.5s;
+    animation: w 0.5s;
   }  
+footer{
+    background-color:brown;
+    height: 50px;
+    text-align: center;
+  }
+footer .medsos{
+    text-align: center;
+    padding-left: 10px;
+    font-size: xx-large;
+    color: wheat;
+  }
+footer .medsos a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 5px 20px;
+    text-align: center;
+  }
